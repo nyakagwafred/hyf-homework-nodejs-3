@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 app.get('/', (req, res) => {
 	res.json({
-		message: 'Hello Buda!',
+		message: 'Hello World!',
 	});
 });
 
