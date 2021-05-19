@@ -21,6 +21,7 @@ app.get('/users/:id', async (req, res) => {
 	const user = await users.find((id) => id === id);
 	try {
 		if (user) {
+			res.status(200);
 			res.send(user);
 		} else {
 			res.json({ msg: 'User not found' });
