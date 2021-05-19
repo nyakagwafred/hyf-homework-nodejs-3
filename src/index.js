@@ -4,9 +4,7 @@ const PORT = 3000;
 const bodyParser = require('body-parser');
 
 app.get('/', (req, res) => {
-	res.json({
-		message: 'Hello World!',
-	});
+	res.send('Hello World!');
 });
 
 app.listen(PORT, () => {
