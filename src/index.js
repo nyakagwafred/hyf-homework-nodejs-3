@@ -5,10 +5,6 @@ const PORT = 3000;
 
 let users = [];
 
-function isID(user) {
-	return user.id === 2;
-}
-
 app.use(express.json());
 app.get('/', (req, res) => {
 	res.send('Hello World!');
